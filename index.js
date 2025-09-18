@@ -152,3 +152,6 @@ renderCategories(categories)
 // Initial rendering of all books
 renderBooks(books);
 
+let cart = [];
+
+let cartSaved = localStorage.getItem('cart')

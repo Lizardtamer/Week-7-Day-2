@@ -91,45 +91,6 @@ function renderfilteredBooksByCategory(category, booksToRender) {
                 filteredBooks= booksToRender;
             }
 
-            //didn't work
-
-           /* if (booksToRender.category === category){
-                for (let i=0; i<=booksToRender.length; i++){
-                    filteredBooks.filter(booksToRender[i]);}
-            } else if (booksToRender.category !== category) {
-                filteredBooks.forEach.push(booksToRender)
-            }; */
-
-
-            //didn't work
-
-            /* if (booksToRender.category !== category){
-                filteredBooks.filter(booksToRender)
-            } else if (booksToRender.category !== category) {
-                for (let i=0; i<=booksToRender.length; i++){
-                    filteredBooks.push(booksToRender[i]);}
-            }; */
-
-            //didn't work
-
-          /*  for (let i=0; i<=booksToRender.length; i++){
-                if (booksToRender.category === category) {
-                    filteredBooks.filter(booksToRender[i]);
-                } else if (booksToRender.category !== category) {
-                    filteredBooks.forEach.push(booksToRender[i])
-                }
-            } */
-            
-            //didn't work
-            
-           /* for (let i=0; i<=booksToRender.length; i++){
-                if (booksToRender.category !== category) {
-                    filteredBooks.push(booksToRender[i]);
-                } else if (booksToRender.category === category) {
-                    filteredBooks.push(booksToRender[i])
-                }
-            } */
-
     renderBooks(filteredBooks)
 }
 

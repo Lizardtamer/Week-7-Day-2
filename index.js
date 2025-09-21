@@ -17,6 +17,12 @@ const books = [
 
 const categories = ["mystery", "historical-fiction", "science-fiction", "fantasy", "non-fiction", "fiction"]
 
+let cart = JSON.parse(localStorage.getItem('cart'));
+
+function saveCart () {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
 // Function to render books on the page
 function renderBooks(booksToRender) {
     let bookListHTML = document.getElementById('bookList');
@@ -98,7 +104,6 @@ function renderfilteredBooksByCategory(category, booksToRender) {
 let clearCartButton =  document.getElementById("clear-cart")
 clearCartButton.addEventListener("click", function(){
     let cartItems = document.getElementsByClassName("cart-item");
-    
     // Loop through the cart items and remove each one
     // We need to go backwards in the loop because we are removing elements
     for (let i = cartItems.length - 1; i >= 0; i--) {
@@ -113,6 +118,3 @@ renderCategories(categories)
 // Initial rendering of all books
 renderBooks(books);
 
-let cart = [];
-
-let cartSaved = localStorage.getItem('cart')

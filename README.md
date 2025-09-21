@@ -23,12 +23,12 @@ In this assignment, you will enhance an online bookstore webpage by adding funct
 ## **Day 2**
 BrowserStorage
 
-To keep building from our starting point in yesterday's lab, COPY your src folder into this repo.
+- [x] To keep building from our starting point in yesterday's lab, COPY your src folder into this repo.
 
-Implement localStorage in your app so that you data from 1 page can persist and carry over to another.
+- [] Implement localStorage in your app so that you data from 1 page can persist and carry over to another.
 
-When creating a new order, the Order Page should use JSON.stringify() and localStorage.setItem()
+- [] When creating a new order, the Order Page should use JSON.stringify() and localStorage.setItem()
 
-If continuing an existing order, JSON.parse() and localStorage.getItem() should be used to access the previous configuration
+- [] If continuing an existing order, JSON.parse() and localStorage.getItem() should be used to access the previous configuration
 
-The view page should use JSON.parse() and localStorage.getItem() to access the order and display it's contents on screen.
+- [] The view page should use JSON.parse() and localStorage.getItem() to access the order and display it's contents on screen.
